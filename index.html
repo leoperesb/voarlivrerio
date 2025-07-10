@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="site_title">Voo Duplo de Parapente no Rio - Pedra Bonita</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n="meta_description" content="Agende seu voo duplo de parapente com piloto experiente na Pedra Bonita, em São Conrado, Rio de Janeiro. Emoção com segurança!" />
+  <meta property="og:title" content="Voo Duplo de Parapente no Rio de Janeiro" />
+  <meta property="og:description" content="Decole da Pedra Bonita e veja o Rio de Janeiro do alto com segurança e emoção!" />
+  <!-- <meta property="og:image" content="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80" />-->
+  <meta property="og:image" content="./img/000-20170322_134301_v2.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="keywords" content="parapente, voo duplo, Pedra Bonita, São Conrado, voo livre, Rio de Janeiro, tandem flight, paragliding" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.lang-toggle { cursor: pointer; font-weight: bold; }</style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+<!-- Cabeçalho com menu centralizado -->
+  <header class="bg-white border-b shadow-sm px-6 py-3 flex flex-col items-center gap-2 md:flex-row md:justify-between">
+    <!-- Logo e nome da empresa à esquerda -->
+    <div class="flex items-center gap-4">
+      <img src="./img/Screenshot_2017-11-19-11-54-16_v4.png" alt="Logo Voar Livre Rio" class="h-14 w-auto">
+      <span class="text-xl font-semibold text-gray-800">Voar Livre Rio</span>
+    </div>
+    <!-- Menu de navegação centralizado -->
+    <nav class="flex gap-6 text-blue-700 font-semibold uppercase tracking-wide text-sm justify-center">
+      <a href="#gallery" class="hover:text-blue-900 transition" data-i18n="menu_gallery">Fotos e Vídeos</a>
+      <a href="#faq" class="hover:text-blue-900 transition" data-i18n="menu_faq">FAQ</a>
+      <a href="#formulario" class="hover:text-blue-900 transition" data-i18n="menu_booking">Agendamento</a>
+    </nav>
+    <!-- Seletor de idioma à direita -->
+    <div class="flex gap-2 text-blue-600 font-bold text-sm">
+      <span class="lang-toggle cursor-pointer" onclick="setLang('pt')">🇧🇷 PT</span> |
+      <span class="lang-toggle cursor-pointer" onclick="setLang('en')">🇺🇸 EN</span>
+    </div>
+  </header>
+  <!-- Seção Hero -->
+  <section class="relative">
+    <!-- <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1350&q=80" class="w-full h-[60vh] object-cover brightness-75"> -->
+    <img src="./img/000-20170322_134301_v2.jpg" alt="Visão da rampa" class="w-full h-[60vh] object-cover brightness-75">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+      <h1 data-i18n="hero_title" class="text-4xl md:text-5xl font-bold">Descubra a emoção do voo duplo de parapente sobre o Rio!</h1>
+      <p data-i18n="hero_subtitle" class="mt-4 text-lg md:text-xl">Decole da Pedra Bonita com um piloto experiente e veja o Rio de cima!</p>
+      <a href="#formulario" data-i18n="hero_button" class="mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition">Agende seu voo agora</a>
+    </div>
+  </section>
+    <!-- Sobre o voo -->
+  <section class="py-12 px-6 max-w-4xl mx-auto text-center">
+    <h2 data-i18n="about_title" class="text-3xl font-bold mb-4">Uma experiência inesquecível!</h2>
+    <p data-i18n="about_text" class="text-lg leading-relaxed mb-6">
+      O voo duplo de parapente é seguro, emocionante e não requer experiência anterior. Tudo que você precisa fazer é correr alguns passos na decolagem e curtir a vista maravilhosa do Rio de Janeiro, passando pela Praia de São Conrado, Pedra da Gávea e Floresta da Tijuca.
+    </p>
+    <p data-i18n="about_text2" class="text-lg">Voos com equipamentos homologados e seguro incluso para sua total segurança.</p>
+  </section>
+  <!-- Como funciona -->
+  <section class="bg-blue-50 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 data-i18n="steps_title" class="text-3xl font-bold mb-6">Como funciona a experiência</h2>
+      <ol class="text-left space-y-4 text-lg">
+        <li data-i18n="step1"><strong>1.</strong> Encontro no clube de voo livre, em São Conrado.</li>
+        <li data-i18n="step2"><strong>2.</strong> Subida até a rampa da Pedra Bonita (transporte incluso).</li>
+        <li data-i18n="step3"><strong>3.</strong> Instruções e preparação para o voo.</li>
+        <li data-i18n="step4"><strong>4.</strong> Voo de aprox. 10 minutos com vídeo e 100+ fotos. Câmera 360º opcional.</li>
+        <li data-i18n="step5"><strong>5.</strong> Pouso na Praia de São Conrado e entrega das mídias.</li>
+      </ol>
+    </div>
+  </section>
+  <!-- Fotos e Vídeos -->
+  <section id="gallery" class="py-12 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 data-i18n="gallery_title" class="text-3xl font-bold mb-8">Fotos e Vídeos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Vídeo como primeiro item -->
+        <div class="rounded-lg shadow overflow-hidden">
+          <iframe
+            src="https://www.youtube.com/embed/uX3PWOQIgJ4"
+            title="Voo duplo de parapente com Leandro Peres"
+            allowfullscreen
+            class="w-full h-full">
+          </iframe>
+          <!-- <video controls alt="Vídeo editado do voo duplo" class="w-full h-full object-cover">
+            <source src="https://youtu.be/uX3PWOQIgJ4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video> -->
+        </div>
+        <!-- Imagens -->
+        <img src="./img/040-G0011996_1499733133873_high_v2.JPG" alt="Vista da rampa de decolagem" class="rounded-lg shadow">
+        <img src="./img/060-IMG-20190113-WA0027_v2.jpg" alt="Vista de São Conrado e Pedra da Gávea" class="rounded-lg shadow">
+        <img src="./img/110-G0012981_1505595697819_high_v2.JPG" alt="Vista da praia de São Conrado" class="rounded-lg shadow">
+        <img src="./img/150-G0012438_1501197392808_high_v2.JPG" alt="Vista da área de pouso no gramado" class="rounded-lg shadow">
+        <img src="./img/160-G0014000_1518458200108_high_v2.JPG" alt="Vista da área de pouso na areia da praia" class="rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+  <!-- Perguntas e Respostas -->
+  <section id="faq" class="bg-blue-50">
+    <section class="bg-blue-50 py-12 px-6 max-w-4xl mx-auto">
+      <h2 data-i18n="faq_title" class="text-3xl font-bold text-center mb-8">Perguntas Frequentes</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-6">
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq1_q">Preciso ter experiência para voar?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq1_a">Não. O voo é feito com um piloto experiente e você só precisa seguir as orientações de decolagem.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq2_q">O voo é seguro?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq2_a">Sim. Usamos equipamentos certificados e seguimos protocolos rigorosos de segurança.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq3_q">Qual a duração do voo?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq3_a">O tempo de voo varia entre 10 e 15 minutos, dependendo das condições de vento.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq4_q">O que está incluído no voo?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq4_a">Inclui transporte até a decolagem na Pedra Bonita, piloto credenciado, fotos e vídeos em HD – e você ainda pode adicionar filmagem 360º para uma experiência mais completa!</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq5_q">E se eu tiver medo de altura?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq5_a">É comum, mas a maioria das pessoas relaxa assim que o voo começa. É uma sensação tranquila e controlada.</p>
+          </details>
+        </div>
+        <div class="space-y-6">
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq6_q">Qual a idade mínima e máxima para voar?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq6_a">A partir de 16 anos. Abaixo de 18 com autorização dos pais.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq7_q">Existe limite de peso?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq7_a">Sim. O limite é determinado por cada equipamento por questões de segurança e desempenho, informe o peso no agendamento e se possui alguma restrição de mobilidade.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq8_q">Posso levar meu celular ou câmera?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq8_a">Não é recomendado por segurança. Toda a filmagem e fotos são feitas com câmeras profissionais acopladas.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq9_q">O que acontece se o clima não estiver bom?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq9_a">Se o tempo estiver ruim, reagendamos para outro dia sem custo. A segurança vem em primeiro lugar.</p>
+          </details>
+          <details class="bg-white p-4 rounded-xl shadow">
+            <summary class="font-semibold cursor-pointer" data-i18n="faq10_q">Preciso pagar antecipado?</summary>
+            <p class="mt-2 text-gray-700" data-i18n="faq10_a">Não. O pagamento é feito no local, apenas se o voo for realizado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- Sobre o piloto -->
+  <section class="bg-gray-100 py-12 px-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <!-- Foto do piloto -->
+      <div class="flex-shrink-0">
+        <img src="./img/20250423_151720.jpg" alt="Foto do piloto Leandro Peres" class="w-64 h-64 object-cover object-bottom rounded-full shadow-lg">
+      </div>
+
+      <!-- Texto -->
+      <div class="text-center md:text-left">
+        <h2 data-i18n="pilot_title" class="text-3xl font-bold mb-4">Sobre o Piloto</h2>
+        <p data-i18n="pilot_text" class="text-lg mb-4">
+          Meu nome é Leandro Peres, instrutor de parapente a mais de 30 anos. Com milhares de voos realizados, minha missão é oferecer uma experiência segura, divertida e inesquecível.
+        </p>
+        <p data-i18n="pilot_text2" class="text-lg">
+          Adoro mostrar as belezas do Rio aos meus passageiros, criando lembranças inesquecíveis.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Formulário de agendamento -->
+  <section id="formulario" id="formulario" class="bg-gray-100 py-12 px-6">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow">
+      <h3 data-i18n="form_title" class="text-2xl font-bold mb-4 text-center">Agende seu voo</h3>
+      <!-- Preços dos serviços -->
+      <ul class="text-left text-gray-700 mb-6 text-sm">
+        <li data-i18n="price_item1">1️⃣ Voo duplo + vídeo + fotos: <strong>R$ 800,00</strong></li>
+        <li data-i18n="price_item2">2️⃣ Vídeo 360º adicional: <strong>R$ 300,00</strong></li>
+        <li data-i18n="price_item3">💳 Aceitamos cartão (10% de acréscimo), com parcelamento em até 3x</li>
+      </ul>
+      <!-- Formulário começa aqui -->
+      <form id="form-agendamento" class="space-y-4">
+        <div>
+          <label data-i18n="form_name" class="block font-medium mb-1">Nome</label>
+          <input type="text" name="nome" required class="w-full border rounded-lg px-4 py-2">
+        </div>
+        <div>
+          <label data-i18n="form_phone" class="block font-medium mb-1">WhatsApp</label>
+          <input type="text" name="whatsapp" required class="w-full border rounded-lg px-4 py-2">
+        </div>
+        <div>
+          <label data-i18n="form_date" class="block font-medium mb-1">Data desejada</label>
+          <input type="date" name="data" required class="w-full border rounded-lg px-4 py-2">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label data-i18n="form_weight" class="block font-medium mb-1">Peso (kg)</label>
+            <input type="number" name="peso" required class="w-full border rounded-lg px-4 py-2">
+          </div>
+          <div>
+            <label data-i18n="form_height" class="block font-medium mb-1">Altura (cm)</label>
+            <input type="number" name="altura" required class="w-full border rounded-lg px-4 py-2">
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-lg" data-i18n="form_submit">Enviar via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5521981812957" target="_blank" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.24 7.76a6 6 0 11-8.48 8.48l-3.76 1 1-3.76a6 6 0 018.48-8.48z" />
+    </svg>
+  </a>
+
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2025 Voar Livre Rio - Todos os direitos reservados.
+  </footer>
+
+  <script>
+
+    //Tradução
+    const translations = {
+      pt: {
+        site_title: "Voo Duplo de Parapente no Rio - Pedra Bonita",
+        meta_description: "Agende seu voo duplo de parapente com piloto experiente na Pedra Bonita, em São Conrado, Rio de Janeiro. Emoção com segurança!",
+        hero_title: "Descubra a emoção do voo duplo de parapente sobre o Rio!",
+        hero_subtitle: "Decole da Pedra Bonita com um piloto experiente e veja o Rio de cima!",
+        hero_button: "Agende seu voo agora",
+        about_title: "Uma experiência inesquecível!",
+        about_text: "O voo duplo de parapente é seguro, emocionante e não requer experiência anterior. Tudo que você precisa fazer é correr alguns passos na decolagem e curtir a vista maravilhosa do Rio de Janeiro, passando pela Praia de São Conrado, Pedra da Gávea e Floresta da Tijuca.",
+        about_text2: "Voos com equipamentos homologados e seguro incluso para sua total segurança.",
+        steps_title: "Como funciona a experiência",
+        step1: "1. Encontro no clube de voo livre, em São Conrado.",
+        step2: "2. Subida até a rampa da Pedra Bonita (transporte incluso).",
+        step3: "3. Instruções e preparação para o voo.",
+        step4: "4. Voo de aprox. 10 minutos com vídeo e 100+ fotos. Câmera 360º opcional.",
+        step5: "5. Pouso na Praia de São Conrado e entrega das mídias.",
+        gallery_title: "Fotos e Vídeos",
+        faq_title: "Perguntas Frequentes",
+        faq1_q: "Preciso ter experiência para voar?",
+        faq1_a: "Não. O voo é feito com um piloto experiente e você só precisa seguir as orientações de decolagem.",
+        faq2_q: "O voo é seguro?",
+        faq2_a: "Sim. Usamos equipamentos certificados e seguimos protocolos rigorosos de segurança.",
+        faq3_q: "Qual a duração do voo?",
+        faq3_a: "O tempo de voo varia entre 10 e 15 minutos, dependendo das condições de vento.",
+        faq4_q: "O que está incluído no voo?",
+        faq4_a: "Inclui transporte até a decolagem na Pedra Bonita, piloto credenciado, fotos e vídeos em HD – e você ainda pode adicionar filmagem 360º para uma experiência mais completa.",
+        faq5_q: "Que roupa devo usar para o voo?",
+        faq5_a: "Use roupas leves e confortáveis, que permitam liberdade de movimento – como as usadas para uma caminhada. Tênis são recomendados, e em dias frios, leve um casaco leve, já que a temperatura no voo costuma ser cerca de 4°C mais baixa que no solo.",
+        faq6_q: "Qual a idade mínima e máxima para voar?",
+        faq6_a: "A partir de 16 anos. Abaixo de 18 com autorização dos pais.",
+        faq7_q: "Existe limite de peso?",
+        faq7_a: "Sim. O limite é determinado por cada equipamento por questões de segurança e desempenho, informe o peso no agendamento e se possui alguma restrição de mobilidade.",
+        faq8_q: "Posso levar meu celular ou câmera?",
+        faq8_a: "Não é recomendado por segurança. Toda a filmagem e fotos são feitas com câmeras profissionais acopladas.",
+        faq9_q: "O que acontece se o clima não estiver bom?",
+        faq9_a: "Se o tempo estiver ruim, reagendamos para outro dia sem custo. A segurança vem em primeiro lugar.",
+        faq10_q: "Preciso pagar antecipado?",
+        faq10_a: "Não. O pagamento é feito no local, apenas se o voo for realizado.",
+        pilot_title: "Sobre o Piloto",
+        pilot_text: "Meu nome é Leandro Peres, instrutor de parapente a mais de 30 anos. Com milhares de voos realizados, minha missão é oferecer uma experiência segura, divertida e inesquecível.",
+        pilot_text2: "Adoro mostrar as belezas do Rio aos meus passageiros, criando lembranças inesquecíveis.",
+        form_title: "Agende seu voo",
+        price_item1: "1️⃣ Voo duplo + vídeo + fotos + taxas de inscrição e seguro: R$ 800,00",
+        price_item2: "2️⃣ Vídeo 360º adicional: R$ 300,00",
+        price_item3: "💳 Aceitamos cartão (10% de acréscimo), com parcelamento em até 3x",
+        form_name: "Nome",
+        form_phone: "WhatsApp",
+        form_weight: "Peso (kg)",
+        form_height: "Altura (cm)",
+        form_date: "Data desejada",
+        form_submit: "Enviar",
+        menu_gallery: "Fotos e Vídeos",
+        menu_faq: "FAQ",
+        menu_booking: "Agendamento"
+      },
+      en: {
+        site_title: "Tandem Paragliding in Rio - Pedra Bonita",
+        meta_description: "Book your tandem paragliding flight with an experienced pilot from Pedra Bonita, in Rio de Janeiro. Thrill and safety combined!",
+        hero_title: "Feel the thrill of tandem paragliding over Rio!",
+        hero_subtitle: "Take off from Pedra Bonita with an experienced pilot and see Rio from above!",
+        hero_button: "Book your flight now",
+        about_title: "An unforgettable experience!",
+        about_text: "Tandem paragliding is safe, exciting, and requires no prior experience. All you need to do is take a few steps during takeoff and enjoy the stunning views of Rio de Janeiro, flying over São Conrado Beach, Pedra da Gávea, and the Tijuca Forest.",
+        about_text2: "Fly with peace of mind – certified gear and insurance included.",
+        steps_title: "How the experience works",
+        step1: "1. Meet at the hang gliding and paragliding club in São Conrado.",
+        step2: "2. Shuttle ride up to the takeoff site at Pedra Bonita (transport included).",
+        step3: "3. Briefing and flight preparation.",
+        step4: "4. Approx. 10-minute flight with video and 100+ photos. Optional 360º camera available.",
+        step5: "5. Landing at São Conrado Beach and delivery of media files.",
+        gallery_title: "Photos and Videos",
+        faq_title: "Frequently Asked Questions",
+        faq1_q: "Do I need experience to fly?",
+        faq1_a: "No. The flight is operated by a certified and experienced pilot — you just need to follow a few takeoff instructions.",
+        faq2_q: "Is the flight safe?",
+        faq2_a: "Yes. We use certified equipment and follow strict safety protocols.",
+        faq3_q: "How long is the flight?",
+        faq3_a: "Flights last between 10 and 15 minutes, depending on wind conditions.",
+        faq4_q: "What’s included in the flight?",
+        faq4_a: "Includes shuttle to the Pedra Bonita takeoff site, certified pilot, HD photos and video – optional 360º footage available for a more complete experience.",
+        faq5_q: "What should I wear for the flight?",
+        faq5_a: "Wear light and comfortable clothes that allow freedom of movement – like what you’d use for a hike. Sneakers are recommended, and on cooler days, bring a light jacket, as the air temperature during flight is usually about 4°C (7°F) colder than on the ground.",
+        faq6_q: "What is the minimum and maximum age to fly?",
+        faq6_a: "Minimum age is 16. Passengers under 18 need parental authorization.",
+        faq7_q: "Is there a weight limit?",
+        faq7_a: "Yes. The limit depends on the equipment. Please inform your weight when booking, especially if it's over 90 kg, or if you have any mobility restrictions.",
+        faq8_q: "Can I take my phone or camera?",
+        faq8_a: "Not recommended for safety reasons. All filming and photos are done with mounted professional cameras.",
+        faq9_q: "What happens if the weather is bad?",
+        faq9_a: "If the weather isn’t suitable, we’ll reschedule at no cost. Safety comes first.",
+        faq10_q: "Do I need to pay in advance?",
+        faq10_a: "No advance payment is required. You’ll only pay for the flight after it happens.",
+        pilot_title: "About the Pilot",
+        pilot_text: "My name is Leandro Peres, paragliding instructor with over 30 years of experience. With thousands of flights completed, my mission is to provide a safe, fun, and unforgettable experience.",
+        pilot_text2: "In addition to flying, I'm passionate about showing my passengers the beauty of Rio, creating memories that last a lifetime.",
+        form_title: "Book your flight",
+        price_item1: "1️⃣ Tandem flight + video + photos + registration and insurance fees: R$ 800.00 (~USD $150)",
+        price_item2: "2️⃣ Optional 360º video: R$ 300 (~USD $50)",
+        price_item3: "💳 Card payments accepted with a 10% fee – up to 3 interest-free installments.",
+        form_name: "Name",
+        form_phone: "WhatsApp",
+        form_weight: "Weight (kg)",
+        form_height: "Height (cm)",
+        form_date: "Preferred date",
+        form_submit: "Send",
+        menu_gallery: "Photos & Videos",
+        menu_faq: "FAQ",
+        menu_booking: "Booking"
+      }
+    };
+
+    function setLang(lang) {
+      localStorage.setItem("lang", lang);
+      document.documentElement.lang = lang;
+      const elements = document.querySelectorAll("[data-i18n]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      document.title = translations[lang].site_title;
+      document.querySelector("meta[name='description']").setAttribute("content", translations[lang].meta_description);
+    }
+
+    const userLang = localStorage.getItem("lang") || (navigator.language.startsWith("pt") ? "pt" : "en");
+    setLang(userLang);
+
+    //Ação do botão do formulário
+    document.querySelector("#form-agendamento").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const nome = document.querySelector("[name='nome']").value;
+    const whatsapp = document.querySelector("[name='whatsapp']").value;
+    const peso = document.querySelector("[name='peso']").value;
+    const altura = document.querySelector("[name='altura']").value;
+    const data = document.querySelector("[name='data']").value;
+
+    const msg = `Olá, meu nome é ${nome}. Gostaria de agendar um voo de parapente.\n\nDados:\n📞 WhatsApp: ${whatsapp}\n📅 Data: ${data}\n⚖️ Peso: ${peso} kg\n📏 Altura: ${altura} cm`;
+
+    const url = `https://wa.me/5521981812957?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank');
+    });
+
+  </script>
+</body>
+</html>
