@@ -2,17 +2,52 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title data-i18n="site_title">Voo Duplo de Parapente no Rio - Pedra Bonita</title>
+  <title data-i18n="site_title">Voo de Parapente no Rio de Janeiro | Pedra Bonita - Voar Livre Rio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" data-i18n="meta_description" content="Agende seu voo duplo de parapente com piloto experiente na Pedra Bonita, em São Conrado, Rio de Janeiro. Emoção com segurança!" />
+  <meta name="description" data-i18n="meta_description" content="Voo duplo de parapente na Pedra Bonita com piloto experiente. Decole do Rio com segurança, fotos, vídeos e emoção! Agende agora sua aventura!" />
   <meta property="og:title" content="Voo Duplo de Parapente no Rio de Janeiro" />
   <meta property="og:description" content="Decole da Pedra Bonita e veja o Rio de Janeiro do alto com segurança e emoção!" />
-  <!-- <meta property="og:image" content="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80" />-->
   <meta property="og:image" content="./img/000-20170322_134301_v2.jpg" />
   <meta property="og:type" content="website" />
   <meta name="keywords" content="parapente, voo duplo, Pedra Bonita, São Conrado, voo livre, Rio de Janeiro, tandem flight, paragliding" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>.lang-toggle { cursor: pointer; font-weight: bold; }</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Voar Livre Rio",
+    "image": "https://voarlivrerio.com.br/img/000-20170322_134301_v2.jpg",
+    "url": "https://voarlivrerio.com.br",
+    "description": "Viva o voo duplo de parapente na Pedra Bonita com piloto experiente. Fotos e vídeos incluídos. Agende agora sua aventura no Rio de Janeiro com emoção e segurança!",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.000589201112195,
+      "longitude": -43.27276169223032
+    },
+    "hasMap": "https://www.google.com/maps/place/Pedra+Bonita",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "R$ 800 - R$ 1100",
+    "telephone": "5521981812957",
+    "sameAs": [
+      "https://www.instagram.com/voarlivrerio",
+      "https://www.youtube.com/@voarlivrerio"
+]
+  }
+  </script>
 </head>
 <body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
 <!-- Cabeçalho com menu centralizado -->
@@ -36,11 +71,10 @@
   </header>
   <!-- Seção Hero -->
   <section class="relative">
-    <!-- <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1350&q=80" class="w-full h-[60vh] object-cover brightness-75"> -->
     <img src="./img/000-20170322_134301_v2.jpg" alt="Visão da rampa" class="w-full h-[60vh] object-cover brightness-75">
     <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-      <h1 data-i18n="hero_title" class="text-4xl md:text-5xl font-bold">Descubra a emoção do voo duplo de parapente sobre o Rio!</h1>
-      <p data-i18n="hero_subtitle" class="mt-4 text-lg md:text-xl">Decole da Pedra Bonita com um piloto experiente e veja o Rio de cima!</p>
+      <h1 data-i18n="hero_title" class="text-4xl md:text-5xl font-bold">Descubra a emoção do voo de parapente na Pedra Bonita – Rio de Janeiro</h1>
+      <p data-i18n="hero_subtitle" class="mt-4 text-lg md:text-xl">Uma experiência inesquecível com piloto experiente, fotos, vídeos e uma vista espetacular do Rio!</p>
       <a href="#formulario" data-i18n="hero_button" class="mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition">Agende seu voo agora</a>
     </div>
   </section>
@@ -48,7 +82,7 @@
   <section class="py-12 px-6 max-w-4xl mx-auto text-center">
     <h2 data-i18n="about_title" class="text-3xl font-bold mb-4">Uma experiência inesquecível!</h2>
     <p data-i18n="about_text" class="text-lg leading-relaxed mb-6">
-      O voo duplo de parapente é seguro, emocionante e não requer experiência anterior. Tudo que você precisa fazer é correr alguns passos na decolagem e curtir a vista maravilhosa do Rio de Janeiro, passando pela Praia de São Conrado, Pedra da Gávea e Floresta da Tijuca.
+      O voo duplo de parapente é seguro, emocionante e não exige experiência. Você decola da Pedra Bonita com um piloto credenciado e sobrevoa pontos incríveis do Rio de Janeiro, como a Praia de São Conrado, a Pedra da Gávea e a Floresta da Tijuca. Uma das atividades de aventura mais procuradas da cidade!
     </p>
     <p data-i18n="about_text2" class="text-lg">Voos com equipamentos homologados e seguro incluso para sua total segurança.</p>
   </section>
@@ -57,11 +91,12 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 data-i18n="steps_title" class="text-3xl font-bold mb-6">Como funciona a experiência</h2>
       <ol class="text-left space-y-4 text-lg">
-        <li data-i18n="step1"><strong>1.</strong> Encontro no clube de voo livre, em São Conrado.</li>
-        <li data-i18n="step2"><strong>2.</strong> Subida até a rampa da Pedra Bonita (transporte incluso).</li>
-        <li data-i18n="step3"><strong>3.</strong> Instruções e preparação para o voo.</li>
-        <li data-i18n="step4"><strong>4.</strong> Voo de aprox. 10 minutos com vídeo e 100+ fotos. Câmera 360º opcional.</li>
-        <li data-i18n="step5"><strong>5.</strong> Pouso na Praia de São Conrado e entrega das mídias.</li>
+        <!--<li data-i18n="step1"><strong>1.</strong> Encontro no clube de voo livre, em São Conrado.</li>-->
+        <li data-i18n="step1"><strong>1.</strong> Encontro no clube de voo livre em São Conrado – ponto de apoio oficial do parapente no Rio.</li>
+        <li data-i18n="step2"><strong>2.</strong> Subida até a rampa da Pedra Bonita (transporte incluído).</li>
+        <li data-i18n="step3"><strong>3.</strong> Instruções com o piloto e preparação para o voo.</li>
+        <li data-i18n="step4"><strong>4.</strong> Voo de aprox. 10 minutos com vídeo e 100+ fotos em HD. Filmagem 360º opcional.</li>
+        <li data-i18n="step5"><strong>5.</strong> Pouso na Praia de São Conrado e recebimento das mídias digitais.</li>
       </ol>
     </div>
   </section>
@@ -71,24 +106,20 @@
       <h2 data-i18n="gallery_title" class="text-3xl font-bold mb-8">Fotos e Vídeos</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <!-- Vídeo como primeiro item -->
-        <div class="rounded-lg shadow overflow-hidden">
-          <iframe
-            src="https://www.youtube.com/embed/uX3PWOQIgJ4"
-            title="Voo duplo de parapente com Leandro Peres"
-            allowfullscreen
-            class="w-full h-full">
-          </iframe>
-          <!-- <video controls alt="Vídeo editado do voo duplo" class="w-full h-full object-cover">
-            <source src="https://youtu.be/uX3PWOQIgJ4" type="video/mp4">
-            Seu navegador não suporta vídeo.
-          </video> -->
-        </div>
+        <iframe
+          src="https://www.youtube.com/embed/uX3PWOQIgJ4"
+          title="Voo duplo de parapente na rampa da Pedra Bonita, São Conrado - Rio de Janeiro"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+          class="w-full aspect-video rounded-lg shadow">
+        </iframe>
         <!-- Imagens -->
-        <img src="./img/040-G0011996_1499733133873_high_v2.JPG" alt="Vista da rampa de decolagem" class="rounded-lg shadow">
-        <img src="./img/060-IMG-20190113-WA0027_v2.jpg" alt="Vista de São Conrado e Pedra da Gávea" class="rounded-lg shadow">
-        <img src="./img/110-G0012981_1505595697819_high_v2.JPG" alt="Vista da praia de São Conrado" class="rounded-lg shadow">
-        <img src="./img/150-G0012438_1501197392808_high_v2.JPG" alt="Vista da área de pouso no gramado" class="rounded-lg shadow">
-        <img src="./img/160-G0014000_1518458200108_high_v2.JPG" alt="Vista da área de pouso na areia da praia" class="rounded-lg shadow">
+        <img src="./img/040-G0011996_1499733133873_high_v2.JPG" alt="Vista da rampa de decolagem da Pedra Bonita em São Conrado - Rio de Janeiro" loading="lazy" class="rounded-lg shadow">
+        <img src="./img/060-IMG-20190113-WA0027_v2.jpg" alt="Vista de São Conrado e Pedra da Gávea" loading="lazy" class="rounded-lg shadow">
+        <img src="./img/110-G0012981_1505595697819_high_v2.JPG" alt="Vista da praia de São Conrado" loading="lazy" class="rounded-lg shadow">
+        <img src="./img/150-G0012438_1501197392808_high_v2.JPG" alt="Vista da área de pouso no gramado" loading="lazy" class="rounded-lg shadow">
+        <img src="./img/160-G0014000_1518458200108_high_v2.JPG" alt="Vista da área de pouso na areia da praia" loading="lazy" class="rounded-lg shadow">
       </div>
     </div>
   </section>
@@ -112,7 +143,7 @@
           </details>
           <details class="bg-white p-4 rounded-xl shadow">
             <summary class="font-semibold cursor-pointer" data-i18n="faq4_q">O que está incluído no voo?</summary>
-            <p class="mt-2 text-gray-700" data-i18n="faq4_a">Inclui transporte até a decolagem na Pedra Bonita, piloto credenciado, fotos e vídeos em HD – e você ainda pode adicionar filmagem 360º para uma experiência mais completa!</p>
+            <p class="mt-2 text-gray-700" data-i18n="faq4_a">"Inclui transporte até a rampa da Pedra Bonita, voo com piloto credenciado, fotos e vídeos em HD. Filmagem 360º disponível como adicional."</p>
           </details>
           <details class="bg-white p-4 rounded-xl shadow">
             <summary class="font-semibold cursor-pointer" data-i18n="faq5_q">E se eu tiver medo de altura?</summary>
@@ -165,7 +196,7 @@
     </div>
   </section>
   <!-- Formulário de agendamento -->
-  <section id="formulario" id="formulario" class="bg-gray-100 py-12 px-6">
+  <section id="formulario" class="bg-gray-100 py-12 px-6">
     <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow">
       <h3 data-i18n="form_title" class="text-2xl font-bold mb-4 text-center">Agende seu voo</h3>
       <!-- Preços dos serviços -->
@@ -203,7 +234,7 @@
     </div>
   </section>
 
-  <a href="https://wa.me/5521981812957" target="_blank" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50">
+  <a href="https://wa.me/5521981812957" aria-label="Agende seu voo via WhatsApp" target="_blank" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.24 7.76a6 6 0 11-8.48 8.48l-3.76 1 1-3.76a6 6 0 018.48-8.48z" />
     </svg>
@@ -218,20 +249,20 @@
     //Tradução
     const translations = {
       pt: {
-        site_title: "Voo Duplo de Parapente no Rio - Pedra Bonita",
-        meta_description: "Agende seu voo duplo de parapente com piloto experiente na Pedra Bonita, em São Conrado, Rio de Janeiro. Emoção com segurança!",
-        hero_title: "Descubra a emoção do voo duplo de parapente sobre o Rio!",
-        hero_subtitle: "Decole da Pedra Bonita com um piloto experiente e veja o Rio de cima!",
+        site_title: "Voo de Parapente no Rio de Janeiro | Pedra Bonita - Voar Livre Rio",
+        meta_description: "Voo duplo de parapente na Pedra Bonita com piloto experiente. Decole do Rio com segurança, fotos, vídeos e emoção! Agende agora sua aventura!",
+        hero_title: "Descubra a emoção do voo de parapente na Pedra Bonita – Rio de Janeiro",
+        hero_subtitle: "Uma experiência inesquecível com piloto experiente, fotos, vídeos e uma vista espetacular do Rio!",
         hero_button: "Agende seu voo agora",
         about_title: "Uma experiência inesquecível!",
-        about_text: "O voo duplo de parapente é seguro, emocionante e não requer experiência anterior. Tudo que você precisa fazer é correr alguns passos na decolagem e curtir a vista maravilhosa do Rio de Janeiro, passando pela Praia de São Conrado, Pedra da Gávea e Floresta da Tijuca.",
+        about_text: "O voo duplo de parapente é seguro, emocionante e não exige experiência. Você decola da Pedra Bonita com um piloto credenciado e sobrevoa pontos incríveis do Rio de Janeiro, como a Praia de São Conrado, a Pedra da Gávea e a Floresta da Tijuca. Uma das atividades de aventura mais procuradas da cidade!",
         about_text2: "Voos com equipamentos homologados e seguro incluso para sua total segurança.",
         steps_title: "Como funciona a experiência",
-        step1: "1. Encontro no clube de voo livre, em São Conrado.",
+        step1: "1. Encontro no clube de voo livre em São Conrado – ponto de apoio oficial do parapente no Rio.",
         step2: "2. Subida até a rampa da Pedra Bonita (transporte incluso).",
-        step3: "3. Instruções e preparação para o voo.",
-        step4: "4. Voo de aprox. 10 minutos com vídeo e 100+ fotos. Câmera 360º opcional.",
-        step5: "5. Pouso na Praia de São Conrado e entrega das mídias.",
+        step3: "3. Instruções com o piloto e preparação para o voo.",
+        step4: "4. Voo de aprox. 10 minutos com vídeo e 100+ fotos em HD. Filmagem 360º opcional.",
+        step5: "5. Pouso na Praia de São Conrado e recebimento das mídias digitais.",
         gallery_title: "Fotos e Vídeos",
         faq_title: "Perguntas Frequentes",
         faq1_q: "Preciso ter experiência para voar?",
@@ -243,7 +274,7 @@
         faq4_q: "O que está incluído no voo?",
         faq4_a: "Inclui transporte até a decolagem na Pedra Bonita, piloto credenciado, fotos e vídeos em HD – e você ainda pode adicionar filmagem 360º para uma experiência mais completa.",
         faq5_q: "Que roupa devo usar para o voo?",
-        faq5_a: "Use roupas leves e confortáveis, que permitam liberdade de movimento – como as usadas para uma caminhada. Tênis são recomendados, e em dias frios, leve um casaco leve, já que a temperatura no voo costuma ser cerca de 4°C mais baixa que no solo.",
+        faq5_a: "Use roupas leves e confortáveis, que permitam liberdade de movimento – como as usadas para uma caminhada. Tênis são recomendados, e em dias frios, leve um casaco leve.",
         faq6_q: "Qual a idade mínima e máxima para voar?",
         faq6_a: "A partir de 16 anos. Abaixo de 18 com autorização dos pais.",
         faq7_q: "Existe limite de peso?",
@@ -272,13 +303,13 @@
         menu_booking: "Agendamento"
       },
       en: {
-        site_title: "Tandem Paragliding in Rio - Pedra Bonita",
-        meta_description: "Book your tandem paragliding flight with an experienced pilot from Pedra Bonita, in Rio de Janeiro. Thrill and safety combined!",
-        hero_title: "Feel the thrill of tandem paragliding over Rio!",
-        hero_subtitle: "Take off from Pedra Bonita with an experienced pilot and see Rio from above!",
+        site_title: "Paragliding in Rio de Janeiro | Pedra Bonita - Voar Livre Rio",
+        meta_description: "Tandem paragliding from Pedra Bonita with a certified instructor. HD photos and videos included. Book your unforgettable adventure in Rio de Janeiro!",
+        hero_title: "Feel the thrill of paragliding from Pedra Bonita – Rio de Janeiro",
+        hero_subtitle: "An unforgettable experience with a certified pilot, breathtaking views, and HD photos & videos included!",
         hero_button: "Book your flight now",
         about_title: "An unforgettable experience!",
-        about_text: "Tandem paragliding is safe, exciting, and requires no prior experience. All you need to do is take a few steps during takeoff and enjoy the stunning views of Rio de Janeiro, flying over São Conrado Beach, Pedra da Gávea, and the Tijuca Forest.",
+        about_text: "Tandem paragliding is a safe and thrilling outdoor activity in Rio. Take off from Pedra Bonita with a certified pilot and fly over São Conrado, Pedra da Gávea and the Tijuca Forest.",
         about_text2: "Fly with peace of mind – certified gear and insurance included.",
         steps_title: "How the experience works",
         step1: "1. Meet at the hang gliding and paragliding club in São Conrado.",
@@ -295,9 +326,9 @@
         faq3_q: "How long is the flight?",
         faq3_a: "Flights last between 10 and 15 minutes, depending on wind conditions.",
         faq4_q: "What’s included in the flight?",
-        faq4_a: "Includes shuttle to the Pedra Bonita takeoff site, certified pilot, HD photos and video – optional 360º footage available for a more complete experience.",
+        faq4_a: "Includes shuttle to the Pedra Bonita takeoff site, certified pilot, HD photos and video. Optional 360º footage available for an enhanced experience.",
         faq5_q: "What should I wear for the flight?",
-        faq5_a: "Wear light and comfortable clothes that allow freedom of movement – like what you’d use for a hike. Sneakers are recommended, and on cooler days, bring a light jacket, as the air temperature during flight is usually about 4°C (7°F) colder than on the ground.",
+        faq5_a: "Wear light and comfortable clothes that allow freedom of movement – like what you’d use for a hike. Sneakers are recommended, and on cooler days, bring a light jacket.",
         faq6_q: "What is the minimum and maximum age to fly?",
         faq6_a: "Minimum age is 16. Passengers under 18 need parental authorization.",
         faq7_q: "Is there a weight limit?",
@@ -329,7 +360,7 @@
 
     function setLang(lang) {
       localStorage.setItem("lang", lang);
-      document.documentElement.lang = lang;
+      document.documentElement.setAttribute("lang", lang);
       const elements = document.querySelectorAll("[data-i18n]");
       elements.forEach(el => {
         const key = el.getAttribute("data-i18n");
